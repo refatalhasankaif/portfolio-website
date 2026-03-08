@@ -12,8 +12,35 @@ const NAV_ITEMS = [
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("home");
+  const [activeSection, setActiveSection] = useState<typeof NAV_ITEMS[number]["id"]>("home");
   const containerRef = useRef<HTMLDivElement>(null);
+
+  // ── Scroll-based active section ──
+  // Finds whichever section's top edge is closest to (but above) 30% down the viewport
+  useEffect(() => {
+    const getActiveSection = () => {
+      const scrollY = window.scrollY;
+      const triggerPoint = scrollY + window.innerHeight * 0.3;
+
+      let current: typeof NAV_ITEMS[number]["id"] = NAV_ITEMS[0].id;
+
+      for (const { id } of NAV_ITEMS) {
+        const el = document.getElementById(id);
+        if (!el) continue;
+        if (el.offsetTop <= triggerPoint) {
+          current = id;
+        }
+      }
+
+      setActiveSection(current);
+    };
+
+    // Set correct state on initial load / refresh
+    getActiveSection();
+
+    window.addEventListener("scroll", getActiveSection, { passive: true });
+    return () => window.removeEventListener("scroll", getActiveSection);
+  }, []);
 
   // Close menu when clicking outside
   useEffect(() => {
@@ -50,8 +77,8 @@ const Navbar = () => {
     };
   }, [menuOpen]);
 
-  // Handle navigation click
-  const handleNavClick = (id: string) => {
+  // Handle navigation click — scroll listener naturally takes over as page scrolls
+  const handleNavClick = (id: typeof NAV_ITEMS[number]["id"]) => {
     setMenuOpen(false);
     setActiveSection(id);
 
@@ -73,7 +100,7 @@ const Navbar = () => {
           className="mx-auto max-w-7xl px-3 sm:px-6 lg:px-8 mt-3 sm:mt-4 lg:mt-5"
         >
           <nav className="pointer-events-auto flex items-center justify-between h-12 sm:h-14 px-4 sm:px-6 lg:px-7 bg-white/80 backdrop-blur-xl backdrop-saturate-150 border border-gray-200/60 rounded-full shadow-lg shadow-gray-200/40 transition-all duration-300">
-            
+
             {/* Logo */}
             <a
               href="#home"
@@ -126,7 +153,7 @@ const Navbar = () => {
               })}
             </ul>
 
-            {/* Social Icons */}
+            {/* Social Icons + Hamburger */}
             <div className="flex items-center gap-0.5 sm:gap-1 shrink-0">
               <a
                 href="https://www.linkedin.com/in/mdrefatalhasankaif/"
@@ -149,11 +176,13 @@ const Navbar = () => {
               {/* Mobile menu button */}
               <button
                 onClick={() => setMenuOpen(!menuOpen)}
+                aria-label="Toggle menu"
+                aria-expanded={menuOpen}
                 className="md:hidden ml-1 p-2 rounded-full text-gray-700 hover:text-gray-950 hover:bg-gray-100/70 transition-all duration-300 active:scale-90"
               >
                 <div className="w-5 h-4 flex flex-col justify-between">
                   <span
-                    className={`block h-0.5 bg-current rounded-full transition-all duration-300 ${
+                    className={`block h-0.5 bg-current rounded-full transition-all duration-300 origin-center ${
                       menuOpen ? "rotate-45 translate-y-1.75" : ""
                     }`}
                   />
@@ -163,14 +192,59 @@ const Navbar = () => {
                     }`}
                   />
                   <span
-                    className={`block h-0.5 bg-current rounded-full transition-all duration-300 ${
-                      menuOpen ? "-rotate-45 -translate-y-1.75" : ""
+                    className={`block h-0.5 bg-current rounded-full transition-all duration-300 origin-center ${
+                      menuOpen ? "-rotate-45 -translate-y-2.25" : ""
                     }`}
                   />
                 </div>
               </button>
             </div>
           </nav>
+
+          {/* ── Mobile Dropdown Menu ── */}
+          <div
+            className={`
+              md:hidden pointer-events-auto mt-2 mx-1
+              bg-white/90 backdrop-blur-xl backdrop-saturate-150
+              border border-gray-200/60 rounded-2xl
+              shadow-lg shadow-gray-200/40
+              overflow-hidden
+              transition-all duration-300 ease-in-out
+              ${menuOpen
+                ? "max-h-96 opacity-100 translate-y-0"
+                : "max-h-0 opacity-0 -translate-y-2 pointer-events-none"
+              }
+            `}
+          >
+            <ul className="flex flex-col py-2">
+              {NAV_ITEMS.map((item) => {
+                const isActive = activeSection === item.id;
+                return (
+                  <li key={item.id}>
+                    <a
+                      href={`#${item.id}`}
+                      onClick={() => handleNavClick(item.id)}
+                      className={`
+                        flex items-center gap-3 mx-2 px-4 py-3 rounded-xl
+                        text-sm font-medium transition-all duration-200 active:scale-98
+                        ${
+                          isActive
+                            ? "text-gray-950 bg-gray-100/80 font-semibold"
+                            : "text-gray-700 hover:text-gray-950 hover:bg-gray-100/70"
+                        }
+                      `}
+                    >
+                      {isActive && (
+                        <span className="w-1.5 h-1.5 rounded-full bg-gray-800 shrink-0" />
+                      )}
+                      {item.label}
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+
         </div>
       </header>
     </>
