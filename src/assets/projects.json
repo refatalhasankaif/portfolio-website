@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "title": "Project One",
+    "description": "A full-stack web application with real-time features, authentication, and a modern UI. Built for production with scalability in mind.",
+    "imageUrl": "/projects/project1.png",
+    "liveLink": "https://project-one.vercel.app",
+    "frontendRepo": "https://github.com/refatalhasankaif/project-one-frontend",
+    "backendRepo": "https://github.com/refatalhasankaif/project-one-backend",
+    "technologies": ["React.js", "TypeScript", "TailwindCSS", "Node.js", "Express.js", "MongoDB", "JWT"]
+  },
+  {
+    "id": 2,
+    "title": "Project Two",
+    "description": "A real-time chat application with rooms, private messaging, and live presence indicators powered by WebSocket.",
+    "imageUrl": "/projects/project2.png",
+    "liveLink": "https://project-two.vercel.app",
+    "frontendRepo": "https://github.com/refatalhasankaif/project-two-frontend",
+    "backendRepo": "https://github.com/refatalhasankaif/project-two-backend",
+    "technologies": ["Next.js", "TypeScript", "Socket.io", "PostgreSQL", "Prisma ORM", "TailwindCSS"]
+  },
+  {
+    "id": 3,
+    "title": "Project Three",
+    "description": "An e-commerce platform with product management, cart, checkout flow, and Firebase-based authentication.",
+    "imageUrl": "/projects/project3.png",
+    "liveLink": "https://project-three.vercel.app",
+    "frontendRepo": "https://github.com/refatalhasankaif/project-three-frontend",
+    "backendRepo": null,
+    "technologies": ["React.js", "Redux", "Firebase Auth", "TailwindCSS", "Node.js", "Express.js"]
+  },
+  {
+    "id": 4,
+    "title": "Project Four",
+    "description": "A task management dashboard with drag-and-drop boards, team collaboration, and role-based access control.",
+    "imageUrl": "/projects/project4.png",
+    "liveLink": "https://project-four.vercel.app",
+    "frontendRepo": "https://github.com/refatalhasankaif/project-four-frontend",
+    "backendRepo": "https://github.com/refatalhasankaif/project-four-backend",
+    "technologies": ["Next.js", "TypeScript", "PostgreSQL", "Prisma ORM", "Better Auth", "TailwindCSS", "Shadcn UI"]
+  },
+  {
+    "id": 5,
+    "title": "Project Five",
+    "description": "A REST API service with full CRUD, JWT auth, rate limiting, and comprehensive Postman documentation.",
+    "imageUrl": "/projects/project5.png",
+    "liveLink": "https://project-five.vercel.app",
+    "frontendRepo": "https://github.com/refatalhasankaif/project-five-frontend",
+    "backendRepo": "https://github.com/refatalhasankaif/project-five-backend",
+    "technologies": ["Node.js", "Express.js", "MongoDB", "Mongoose", "JWT", "REST API", "TypeScript"]
+  }
+]

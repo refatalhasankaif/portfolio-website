@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "title": "Project One",
+    "description": "A full-stack web application with real-time features, authentication, and a modern UI. Built for production with scalability in mind.",
+    "imageUrl": "https://images.unsplash.com/photo-1772775133231-17697ad11ff8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "liveLink": "https://project-one.vercel.app",
+    "frontendRepo": "https://github.com/refatalhasankaif/project-one-frontend",
+    "backendRepo": "https://github.com/refatalhasankaif/project-one-backend",
+    "technologies": ["React.js", "TypeScript", "TailwindCSS", "Node.js", "Express.js", "MongoDB", "JWT"]
+  }
+]
