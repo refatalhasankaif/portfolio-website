@@ -6,13 +6,10 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { LuMail, LuSend, LuCheck, LuCircleAlert } from "react-icons/lu";
-import { envVars } from "../../env/env";
 
-
-
-const EMAILJS_SERVICE_ID  = envVars.EMAILJS_PUBLIC_KEY
-const EMAILJS_TEMPLATE_ID = envVars.EMAILJS_SERVICE_ID
-const EMAILJS_PUBLIC_KEY  = envVars.EMAILJS_TEMPLATE_ID
+const EMAILJS_SERVICE_ID  = "service_oednwvq" as string;
+const EMAILJS_TEMPLATE_ID = "template_w59xl51" as string;
+const EMAILJS_PUBLIC_KEY  = "rM6Ie_Pd-HhbknAzh" as string;
 
 type Status = "idle" | "loading" | "success" | "error";
 
