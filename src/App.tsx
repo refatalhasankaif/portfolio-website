@@ -22,7 +22,7 @@ function App() {
                 <section id="projects">
                     <Projects />
                 </section>
-                <section id="currentactivities">
+                <section id="current-activities">
                     <CurrentActivity />
                 </section>
                 <section id="about">
