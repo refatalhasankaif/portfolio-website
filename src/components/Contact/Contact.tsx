@@ -128,7 +128,7 @@ const Contact = () => {
           {status === "error" && (
             <div className="flex items-center gap-2.5 px-4 py-3 rounded-xl bg-red-50 border border-red-200 text-red-600 text-sm font-medium">
               <LuCircleAlert size={16} />
-              Something went wrong. Please try again or email me directly.
+              Something went wrong. Please try again or email me directly to: mdrefatahk@gmail.com
             </div>
           )}
 
@@ -147,6 +147,7 @@ const Contact = () => {
               }
             `}
           >
+            
             {status === "loading" ? (
               <>
                 <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
