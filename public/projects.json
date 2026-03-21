@@ -3,10 +3,10 @@
     "id": 1,
     "title": "BytesURL | Modern Full-Stack URL Shortener",
     "description": "BytesURL is a complete, production-ready URL shortener platform I built as a full-stack project. It lets users shorten long links instantly (with optional custom aliases for branding), track detailed real-time analytics per link (clicks by device, browser, OS, country, city, referrer), and manage everything from a clean user dashboard.",
-    "imageUrl": "https://i.ibb.co.com/fzt1WDyr/image-1.jpg",
+    "imageUrl": "https://i.ibb.co.com/5hWcjDgj/Bone-White-Blue-Groovy-You-Matter-Desktop-Wallpaper.webp",
     "liveLink": "https://bytesurl.vercel.app/",
     "frontendRepo": "https://github.com/refatalhasankaif/bytesurl-frontend",
     "backendRepo": "https://github.com/refatalhasankaif/bytesurl-backend",
-    "technologies": ["Next.js", "TypeScript","Responsive", "TailwindCSS", "Node.js", "Express.js", "Prisma ORM", "SQL", "PostgreSQL", "Firebase Auth" ]
+    "technologies": ["Next.js", "TypeScript","Responsive", "TailwindCSS", "Node.js", "Express.js", "REST API", "Prisma ORM", "SQL", "PostgreSQL", "Firebase Auth" ]
   }
 ]
