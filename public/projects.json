@@ -1,12 +1,12 @@
 [
   {
     "id": 1,
-    "title": "Project One",
-    "description": "A full-stack web application with real-time features, authentication, and a modern UI. Built for production with scalability in mind.",
-    "imageUrl": "https://images.unsplash.com/photo-1772775133231-17697ad11ff8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "liveLink": "https://project-one.vercel.app",
-    "frontendRepo": "https://github.com/refatalhasankaif/project-one-frontend",
-    "backendRepo": "https://github.com/refatalhasankaif/project-one-backend",
-    "technologies": ["React.js", "TypeScript", "TailwindCSS", "Node.js", "Express.js", "MongoDB", "JWT"]
+    "title": "BytesURL | Modern Full-Stack URL Shortener",
+    "description": "BytesURL is a complete, production-ready URL shortener platform I built as a full-stack project. It lets users shorten long links instantly (with optional custom aliases for branding), track detailed real-time analytics per link (clicks by device, browser, OS, country, city, referrer), and manage everything from a clean user dashboard.",
+    "imageUrl": "https://i.ibb.co.com/fzt1WDyr/image-1.jpg",
+    "liveLink": "https://bytesurl.vercel.app/",
+    "frontendRepo": "https://github.com/refatalhasankaif/bytesurl-frontend",
+    "backendRepo": "https://github.com/refatalhasankaif/bytesurl-backend",
+    "technologies": ["Next.js", "TypeScript","Responsive", "TailwindCSS", "Node.js", "Express.js", "Prisma ORM", "SQL", "PostgreSQL", "Firebase Auth" ]
   }
 ]
