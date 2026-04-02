@@ -1,18 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { LuGithub, LuLinkedin } from "react-icons/lu";
 
-const XIcon = ({ size = 20 }: { size?: number }) => (
-  <svg
-    width={size}
-    height={size}
-    viewBox="0 0 24 24"
-    fill="currentColor"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z" />
-  </svg>
-);
-
 const NAV_ITEMS = [
   { label: "Home", id: "home" },
   { label: "Skills", id: "skills" },
@@ -169,14 +157,6 @@ const Navbar = () => {
             <div className="flex items-center gap-0.5 sm:gap-1 shrink-0">
               {/* Social icons — desktop only */}
               <div className="hidden md:flex items-center gap-0.5">
-                <a
-                  href="https://x.com/mdrefatahk"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2.5 rounded-full text-gray-700 hover:text-gray-950 hover:bg-gray-100/70 transition-all duration-300 active:scale-90 hover:scale-110"
-                >
-                  <XIcon size={18} />
-                </a>
 
                 <a
                   href="https://www.linkedin.com/in/mdrefatalhasankaif/"
@@ -270,14 +250,6 @@ const Navbar = () => {
 
             {/* Social icons — mobile only */}
             <div className="flex items-center gap-1 px-4 py-3 border-t border-gray-100/80">
-              <a
-                href="https://x.com/mdrefatahk"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 rounded-full text-gray-700 hover:text-gray-950 hover:bg-gray-100/70 transition-all duration-300 active:scale-90"
-              >
-                <XIcon size={18} />
-              </a>
               <a
                 href="https://www.linkedin.com/in/mdrefatalhasankaif/"
                 target="_blank"
