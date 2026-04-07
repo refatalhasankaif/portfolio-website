@@ -3,8 +3,9 @@ import { useEffect, useRef, useState } from "react";
 import {
   LuBrainCircuit, LuGitBranch, LuZap,
   LuFlame, LuServer,
+  LuCode,
 } from "react-icons/lu";
-import { SiGo, SiDocker, } from "react-icons/si";
+import { SiDocker, } from "react-icons/si";
 
 function useInView(threshold = 0.05) {
   const ref = useRef<HTMLDivElement>(null);
@@ -26,46 +27,46 @@ function useInView(threshold = 0.05) {
 
 const ACTIVITIES = [
   {
-    icon: SiGo,
-    color: "#00ADD8",
-    bg: "#e0f7fe",
-    title: "Golang",
-    desc: "Building high-performance backend services and REST APIs with Go",
-  },
-  {
-    icon: LuBrainCircuit,
-    color: "#059669",
-    bg: "#ecfdf5",
-    title: "AI Experiments",
-    desc: "Exploring LLM APIs, prompt engineering, and AI-powered app development",
+    icon: LuCode,
+    color: "#6366f1",
+    bg: "#eef0ff",
+    title: "Web Development",
+    desc: "Completed core course on time, now doing reward courses from Next Level Web Development (Batch 6)",
   },
   {
     icon: SiDocker,
     color: "#2496ED",
     bg: "#e8f4fd",
     title: "Docker",
-    desc: "Learning containerisation, Docker Compose, and deployment workflows",
-  },
-  {
-    icon: LuServer,
-    color: "#6366f1",
-    bg: "#eef0ff",
-    title: "System Design",
-    desc: "Studying scalable system design patterns, microservices, and architecture",
-  },
-  {
-    icon: LuFlame,
-    color: "#ef4444",
-    bg: "#fef2f2",
-    title: "Portfolio",
-    desc: "Actively building and refining this portfolio with industry-grade projects",
+    desc: "Learning containerization and basic deployment",
   },
   {
     icon: LuGitBranch,
     color: "#f59e0b",
     bg: "#fffbe6",
     title: "Open Source",
-    desc: "Learning to contribute to open-source projects through issues and PRs",
+    desc: "Learning to contribute through issues and pull requests",
+  },
+  {
+    icon: LuServer,
+    color: "#6366f1",
+    bg: "#eef0ff",
+    title: "System Design",
+    desc: "Understanding how web systems work behind the scenes",
+  },
+  {
+    icon: LuBrainCircuit,
+    color: "#059669",
+    bg: "#ecfdf5",
+    title: "AI Experiments",
+    desc: "Trying simple AI APIs and use cases",
+  },
+  {
+    icon: LuFlame,
+    color: "#ef4444",
+    bg: "#fef2f2",
+    title: "Career",
+    desc: "Actively looking for junior/full-stack developer opportunities",
   },
 ];
 

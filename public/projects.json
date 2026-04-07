@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "BytesURL | Modern Full-Stack URL Shortener",
-        "description": "BytesURL is a complete, production-ready URL shortener platform I built as a full-stack project. It lets users shorten long links instantly (with optional custom aliases for branding), track detailed real-time analytics per link (clicks by device, browser, OS, country, city, referrer), and manage everything from a clean user dashboard.",
+        "description": "BytesURL is a full-stack URL shortener that lets users create branded short links, track real-time analytics, and manage everything through a clean dashboard.",
         "imageUrl": "https://i.ibb.co.com/5hWcjDgj/Bone-White-Blue-Groovy-You-Matter-Desktop-Wallpaper.webp",
         "liveLink": "https://bytesurl.vercel.app/",
         "frontendRepo": "https://github.com/refatalhasankaif/bytesurl-frontend",
@@ -23,8 +23,8 @@
     {
         "id": 2,
         "title": "FoodHub | Discover & Order Delicious Meals",
-        "description": "FoodHub is a full-stack food ordering platform built with Next.js, TypeScript, Tailwind CSS, Node.js, Express, PostgreSQL, and Prisma. The application supports three roles: Customer, Seller, and Admin, with role-based access control and full CRUD functionality.",
-        "imageUrl": "https://i.ibb.co.com/Mybk0xPn/Screenshot-From-2026-04-07-08-32-59.png",
+        "description": "FoodHub is a full-stack food ordering platform with role-based access for customers, sellers, and admins, supporting secure authentication and full CRUD operations.",
+           "imageUrl": "https://i.ibb.co.com/Mybk0xPn/Screenshot-From-2026-04-07-08-32-59.png",
         "liveLink": "https://project-foodhub.vercel.app/",
         "frontendRepo": "https://github.com/refatalhasankaif/foodhub-frontend",
         "backendRepo": "https://github.com/refatalhasankaif/foodhub-backend",
