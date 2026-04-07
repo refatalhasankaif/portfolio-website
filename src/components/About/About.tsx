@@ -38,7 +38,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="relative w-full min-h-screen flex items-center bg-linear-to-b from-white to-gray-50 overflow-hidden"
+      className="relative w-full py-10 flex items-center bg-linear-to-b from-white to-gray-50 overflow-hidden"
     >
       {/* Background */}
       <div className="absolute inset-0 pointer-events-none">
@@ -92,7 +92,7 @@ const About = () => {
               </div>
             </div>
 
-            <p className="text-sm sm:text-base text-gray-600 leading-relaxed max-w-[90%]">
+            <p className="text-sm sm:text-base text-gray-600 leading-relaxed md:max-w-[95%] max-w-full sm:max-w-[90%]">
               I am a motivated Full-stack Developer from Bangladesh, passionate about building
               real-world solutions through hands-on projects. I write clean, maintainable code and
               focus on building efficient, scalable web applications with strong attention to
