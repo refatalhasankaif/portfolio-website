@@ -92,7 +92,7 @@ const About = () => {
               </div>
             </div>
 
-            <p className="text-sm sm:text-base text-gray-600 leading-relaxed max-w-2xl">
+            <p className="text-sm sm:text-base text-gray-600 leading-relaxed max-w-[90%]">
               I am a motivated Full-stack Developer from Bangladesh, passionate about building
               real-world solutions through hands-on projects. I write clean, maintainable code and
               focus on building efficient, scalable web applications with strong attention to
@@ -108,7 +108,7 @@ const About = () => {
                 {PRINCIPLES.map(({ icon: Icon, label, desc }, i) => (
                   <div
                     key={label}
-                    className="flex items-start gap-3 p-3.5 rounded-2xl border border-gray-100 bg-white hover:border-gray-200 hover:shadow-sm transition-all duration-200"
+                    className="flex items-start gap-3 p-3.5 rounded-2xl border border-gray-200 bg-white hover:hover:border-gray-300 hover:shadow-sm transition-all duration-200"
                     style={{
                       opacity:   visible ? 1 : 0,
                       transform: visible ? "translateY(0)" : "translateY(12px)",

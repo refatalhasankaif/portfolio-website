@@ -108,10 +108,10 @@ function ProfileCard() {
                     Available for work
                 </div>
 
-                <div className="flex flex-col items-center pt-4 pb-5 border-b border-gray-100">
+                <div className="flex flex-col items-center pt-4 pb-5 border-b border-gray-200">
                     <div className="relative mb-4">
                         <div
-                            className="absolute inset-0 rounded-full border-2 border-dashed border-gray-300/60 animate-spin"
+                            className="absolute inset-0 rounded-full border-2 border-dashed border-gray-200/60 animate-spin"
                             style={{ animationDuration: "12s", margin: "-6px" }}
                         />
                         <div className="relative w-24 h-24 rounded-full bg-linear-to-br from-gray-200 to-gray-300 overflow-hidden ring-4 ring-white shadow-lg">
@@ -201,7 +201,7 @@ const Hero = () => {
                             <a
                                 href="/assets/cv.pdf"
                                 download="Refat_Al_Hasan_CV.pdf"
-                                className="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 text-sm sm:text-base font-semibold border-2 border-gray-300 text-gray-700 rounded-full transition-all duration-300 hover:border-gray-800 hover:text-gray-900 hover:shadow-lg hover:-translate-y-0.5 active:scale-95 bg-white/60 backdrop-blur-sm"
+                                className="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 text-sm sm:text-base font-semibold border-2 border-gray-200 text-gray-700 rounded-full transition-all duration-300 hover:border-gray-800 hover:text-gray-900 hover:shadow-lg hover:-translate-y-0.5 active:scale-95 bg-white/60 backdrop-blur-sm"
                             >
                                 Download CV
                                 <LuDownload size={16} />
@@ -218,7 +218,7 @@ const Hero = () => {
 
             <div className="absolute bottom-6 sm:bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gray-400">
                 <span className="text-xs font-medium tracking-widest uppercase">Scroll</span>
-                <div className="w-5 h-8 border-2 border-gray-300 rounded-full flex items-start justify-center p-1">
+                <div className="w-5 h-8 border-2 border-gray-200 rounded-full flex items-start justify-center p-1">
                     <div className="w-1 h-2 bg-gray-400 rounded-full animate-bounce" />
                 </div>
             </div>

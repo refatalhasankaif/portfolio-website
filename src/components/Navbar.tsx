@@ -126,26 +126,15 @@ const Navbar = () => {
                                             href={`#${item.id}`}
                                             onClick={() => handleNavClick(item.id)}
                                             className={`
-                        group relative px-4 py-2 rounded-full transition-all duration-300 active:scale-95
+                        px-4 py-2 rounded-full transition-all duration-300 active:scale-95
+                        border
                         ${isActive
-                                                    ? "text-gray-950 bg-gray-100/80 font-semibold"
-                                                    : "text-gray-700 hover:text-gray-950 hover:bg-gray-100/70"
+                                                    ? "text-gray-950 bg-gray-100/80 border-gray-300 shadow-[0_2px_6px_rgba(0,0,0,0.08)]"
+                                                    : "text-gray-700 border-transparent hover:border-gray-200 hover:bg-gray-100/60 hover:text-gray-950 hover:shadow-[0_2px_6px_rgba(0,0,0,0.05)]"
                                                 }
-                      `}
+                    `}
                                         >
                                             {item.label}
-
-                                            <span
-                                                className={`
-                          absolute inset-x-4 -bottom-0.5 h-0.5 rounded-full
-                          bg-linear-to-r from-transparent via-gray-600/80 to-transparent
-                          transition-transform duration-300 origin-center
-                          ${isActive
-                                                        ? "scale-x-100"
-                                                        : "scale-x-0 group-hover:scale-x-100"
-                                                    }
-                        `}
-                                            />
                                         </a>
                                     </li>
                                 );
@@ -252,7 +241,7 @@ const Navbar = () => {
                         </ul>
 
                         {/* Social icons — mobile only */}
-                        <div className="flex items-center gap-1 px-4 py-3 border-t border-gray-100/80">
+                        <div className="flex items-center gap-1 px-4 py-3 border-t border-gray-200/80">
                             <a
                                 href="https://www.linkedin.com/in/mdrefatalhasankaif/"
                                 target="_blank"
@@ -260,6 +249,14 @@ const Navbar = () => {
                                 className="p-2 rounded-full text-gray-700 hover:text-gray-950 hover:bg-gray-100/70 transition-all duration-300 active:scale-90"
                             >
                                 <LuLinkedin size={20} strokeWidth={1.8} />
+                            </a>
+                            <a
+                                href="https://x.com/mdrefatalhasan"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="p-2.5 rounded-full text-gray-700 hover:text-gray-950 hover:bg-gray-100/70 transition-all duration-300 active:scale-90 hover:scale-110"
+                            >
+                                <FaXTwitter size={20} strokeWidth={1.8} />
                             </a>
                             <a
                                 href="https://github.com/refatalhasankaif"

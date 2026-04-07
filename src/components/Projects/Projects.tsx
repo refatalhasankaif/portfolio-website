@@ -95,7 +95,7 @@ function TechBadge({ name }: { name: string }) {
     const Icon = meta.icon;
     return (
         <div
-            className="flex items-center gap-1.5 px-2.5 py-1 rounded-full border border-gray-100 text-[10px] font-semibold text-gray-700"
+            className="flex items-center gap-1.5 px-2.5 py-1 rounded-full border border-gray-200 text-[10px] font-semibold text-gray-700"
             style={{ backgroundColor: meta.bg }}
             title={name}
         >
@@ -110,7 +110,7 @@ function ProjectCard({ project, index, visible }: { project: Project; index: num
 
     return (
         <div
-            className="group flex flex-col bg-white rounded-2xl border-2 border-gray-200 overflow-hidden hover:border-gray-300 hover:shadow-xl hover:shadow-gray-100/80 transition-all duration-300"
+            className="group flex flex-col bg-white rounded-2xl border border-gray-200 overflow-hidden hover:border-gray-300 hover:shadow-xl hover:shadow-gray-100/80 transition-all duration-300"
             style={{
                 opacity: visible ? 1 : 0,
                 transform: visible ? "translateY(0)" : "translateY(28px)",
@@ -239,7 +239,7 @@ const Projects = () => {
         >
 
             <div className="absolute inset-0 pointer-events-none overflow-hidden">
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-200 h-64 bg-linear-to-b from-gray-50 to-transparent" />
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-64 bg-linear-to-b from-gray-50 to-transparent" />
                 <div
                     className="absolute inset-0 opacity-[0.02]"
                     style={{
@@ -278,7 +278,7 @@ const Projects = () => {
                 {loading && (
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
                         {Array.from({ length: 3 }).map((_, i) => (
-                            <div key={i} className="rounded-2xl border border-gray-100 bg-gray-50 animate-pulse">
+                            <div key={i} className="rounded-2xl border border-gray-200 bg-gray-50 animate-pulse">
                                 <div className="aspect-video bg-gray-200 rounded-t-2xl" />
                                 <div className="p-5 space-y-3">
                                     <div className="h-5 bg-gray-200 rounded-full w-2/3" />

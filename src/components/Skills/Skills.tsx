@@ -133,7 +133,7 @@ const Skills = () => {
                         return (
                             <div
                                 key={skill.name}
-                                className="group relative flex flex-col items-center gap-3 p-4 sm:p-5 rounded-2xl border border-gray-100 bg-white hover:border-gray-200 hover:shadow-md hover:shadow-gray-100/80 transition-all duration-300 cursor-default"
+                                className="group relative flex flex-col items-center gap-3 p-4 sm:p-5 rounded-2xl border border-gray-200 bg-white hover:border-gray-300 hover:shadow-md hover:shadow-gray-100/80 transition-all duration-300 cursor-default"
                                 style={{
                                     opacity: gridVisible ? 1 : 0,
                                     transform: gridVisible ? "translateY(0)" : "translateY(20px)",

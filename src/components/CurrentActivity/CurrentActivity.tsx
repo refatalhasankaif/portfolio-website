@@ -124,8 +124,8 @@ const CurrentActivity = () => {
             <div
               key={title}
               className={`
-                flex flex-col gap-4 p-5 rounded-2xl border border-gray-100 bg-white
-                hover:border-gray-200 hover:shadow-lg hover:shadow-gray-100/80
+                flex flex-col gap-4 p-5 rounded-2xl border border-gray-200 bg-white
+                hover:border-gray-300 hover:shadow-lg hover:shadow-gray-100/80
                 transition-all duration-300 cursor-default
 
               `}
