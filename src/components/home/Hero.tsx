@@ -45,7 +45,7 @@ function ParticleField() {
 const STATS = [
     { icon: LuCode, value: "15+", label: "Projects" },
     { icon: LuBraces, value: "2+", label: "Yrs Coding" },
-    { icon: LuDatabase, value: "25+", label: "Technologies" },
+    { icon: LuDatabase, value: "20+", label: "Technologies" },
     { icon: LuGlobe, value: "5+", label: "Live Apps" },
 ];
 

@@ -1,16 +1,14 @@
 // src/components/Skills.tsx
 import { useState, useEffect, useRef } from "react";
 import {
-    SiHtml5, SiCss, SiTailwindcss, SiJavascript, SiTypescript,
-    SiRedux, SiReact, SiNextdotjs, SiFirebase, SiNodedotjs,
-    SiExpress, SiMongodb, SiPostgresql, SiPrisma, SiRedis,
-    SiSocketdotio, SiPostman, SiJsonwebtokens,
+    SiHtml5, SiCss, SiTailwindcss, SiJavascript, SiTypescript, SiReact, SiNextdotjs, SiFirebase, SiNodedotjs,
+    SiExpress, SiMongodb, SiPostgresql, SiPrisma, SiRedis, SiPostman,
 } from "react-icons/si";
 
 import {
-    LuShieldCheck, LuDatabase, LuPlug, LuNetwork,
-    LuLayoutTemplate, LuWrench, LuCode, LuFramer, LuTable2,
-    LuVideo,
+    LuShieldCheck, LuDatabase, LuNetwork,
+    LuLayoutTemplate, LuWrench, LuCode,
+
 } from "react-icons/lu";
 import type { IconType } from "react-icons";
 
@@ -28,7 +26,7 @@ const SKILLS: Skill[] = [
     { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E", bg: "#fffde6" },
     { name: "TypeScript", icon: SiTypescript, color: "#3178C6", bg: "#e8f0fb" },
     { name: "Shadcn UI", icon: LuLayoutTemplate, color: "#18181b", bg: "#f4f4f5" },
-    { name: "Redux", icon: SiRedux, color: "#764ABC", bg: "#f3eeff" },
+    // { name: "Redux", icon: SiRedux, color: "#764ABC", bg: "#f3eeff" },
     { name: "React.js", icon: SiReact, color: "#61DAFB", bg: "#e0f9ff" },
     { name: "Next.js", icon: SiNextdotjs, color: "#000000", bg: "#f2f2f2" },
     { name: "Node.js", icon: SiNodedotjs, color: "#339933", bg: "#e8f5e9" },
@@ -39,20 +37,20 @@ const SKILLS: Skill[] = [
     { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1", bg: "#eef1fd" },
     { name: "Prisma ORM", icon: SiPrisma, color: "#2D3748", bg: "#f0f2f5" },
     { name: "Redis", icon: SiRedis, color: "#DC382D", bg: "#fef0ef" },
-    { name: "WebSocket", icon: LuPlug, color: "#7c3aed", bg: "#f3eeff" },
-    { name: "Socket.io", icon: SiSocketdotio, color: "#010101", bg: "#f5f5f5" },
-    { name: "WebRTC", icon: LuVideo, color: "#34a853", bg: "#e8f5e9" },
-    { name: "Firebase Auth", icon: SiFirebase, color: "#FFCA28", bg: "#fffbe6" },
+    // { name: "WebSocket", icon: LuPlug, color: "#7c3aed", bg: "#f3eeff" },
+    // { name: "Socket.io", icon: SiSocketdotio, color: "#010101", bg: "#f5f5f5" },
+    // { name: "WebRTC", icon: LuVideo, color: "#34a853", bg: "#e8f5e9" },
+    { name: "Firebase", icon: SiFirebase, color: "#FFCA28", bg: "#fffbe6" },
     { name: "Better Auth", icon: LuShieldCheck, color: "#0ea5e9", bg: "#e0f5ff" },
     { name: "REST API", icon: LuNetwork, color: "#059669", bg: "#ecfdf5" },
-    { name: "JWT", icon: SiJsonwebtokens, color: "#d63aff", bg: "#faf0ff" },
+    // { name: "JWT", icon: SiJsonwebtokens, color: "#d63aff", bg: "#faf0ff" },
     { name: "Postman", icon: SiPostman, color: "#FF6C37", bg: "#fff3ee" },
     { name: "VS Code", icon: LuCode, color: "#007ACC", bg: "#e8f4fd" },
     // { name: "Linux", icon: SiLinux, color: "#FCC624", bg: "#fffce6" },
     // { name: "Figma", icon: SiFigma, color: "#F24E1E", bg: "#fff0ed" },
     // { name: "Pixso", icon: LuPenTool, color: "#8b5cf6", bg: "#f3eeff" },
-    { name: "Draw.io", icon: LuFramer, color: "#f97316", bg: "#fff4ed" },
-    { name: "BeeKeeper Studio", icon: LuTable2, color: "#f59e0b", bg: "#fffbe6" },
+    // { name: "Draw.io", icon: LuFramer, color: "#f97316", bg: "#fff4ed" },
+    // { name: "BeeKeeper Studio", icon: LuTable2, color: "#f59e0b", bg: "#fffbe6" },
 ];
 
 function useInView(threshold = 0.1) {
