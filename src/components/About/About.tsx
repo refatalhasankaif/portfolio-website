@@ -57,35 +57,15 @@ const About = () => {
         ref={ref}
         className="relative w-full max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 py-10"
       >
-        {/* ── 25% image | 75% content ── */}
         <div className="flex flex-col lg:flex-row gap-0 items-stretch">
-
-          {/* Image — 25% */}
           <div
-            className="w-full lg:w-[35%] flex items-end justify-center lg:justify-start shrink-0"
-            style={{
-              opacity:   visible ? 1 : 0,
-              transform: visible ? "translateX(0)" : "translateX(-24px)",
-              transition: "opacity 0.7s ease, transform 0.7s ease",
-            }}
-          >
-            <img
-              src="/about.png"
-              alt="Refat al hasan"
-              className="w-full max-h-[80vh] object-contain object-bottom"
-            />
-          </div>
-
-          {/* Content — 75% */}
-          <div
-            className="w-full lg:w-[65%] flex flex-col justify-center gap-7 lg:pl-8 pt-8 lg:pt-0"
+            className="w-full lg:w-full flex flex-col justify-center gap-7 lg:pl-8 pt-8 lg:pt-0"
             style={{
               opacity:   visible ? 1 : 0,
               transform: visible ? "translateX(0)" : "translateX(24px)",
               transition: "opacity 0.7s ease 0.1s, transform 0.7s ease 0.1s",
             }}
           >
-            {/* Name + meta */}
             <div>
               <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-gray-900 leading-tight">
                 Hi, I'm{" "}
@@ -94,7 +74,7 @@ const About = () => {
                 </span>
               </h2>
               <p className="mt-2 text-sm font-semibold text-gray-500 tracking-wide">
-                Junior Software Developer
+                Full-stack Developer
               </p>
               <div className="flex flex-wrap items-center gap-3 mt-3">
                 <span className="flex items-center gap-1.5 text-xs text-gray-500 font-medium">
@@ -112,16 +92,14 @@ const About = () => {
               </div>
             </div>
 
-            {/* Bio — single paragraph */}
             <p className="text-sm sm:text-base text-gray-600 leading-relaxed max-w-2xl">
-              I am a motivated Junior Software Developer from Bangladesh, passionate about building
+              I am a motivated Full-stack Developer from Bangladesh, passionate about building
               real-world solutions through hands-on projects. I write clean, maintainable code and
               focus on building efficient, scalable web applications with strong attention to
               performance, user experience, and modern best practices. I am adaptable, quick to learn,
               and comfortable working across the full stack.
             </p>
 
-            {/* Principles */}
             <div>
               <p className="text-[11px] font-bold text-gray-400 uppercase tracking-widest mb-4">
                 How I work

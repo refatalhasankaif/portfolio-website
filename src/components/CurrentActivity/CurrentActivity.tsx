@@ -1,10 +1,10 @@
 // src/components/CurrentActivity.tsx
 import { useEffect, useRef, useState } from "react";
 import {
-  LuBrainCircuit, LuGitBranch, LuBookOpen, LuZap,
+  LuBrainCircuit, LuGitBranch, LuZap,
   LuFlame, LuServer,
 } from "react-icons/lu";
-import { SiGo, SiThreedotjs, SiDocker, SiLeetcode } from "react-icons/si";
+import { SiGo, SiDocker, } from "react-icons/si";
 
 function useInView(threshold = 0.05) {
   const ref = useRef<HTMLDivElement>(null);
@@ -33,20 +33,6 @@ const ACTIVITIES = [
     desc: "Building high-performance backend services and REST APIs with Go",
   },
   {
-    icon: SiThreedotjs,
-    color: "#000000",
-    bg: "#f2f2f2",
-    title: "Three.js",
-    desc: "Creating interactive 3D web experiences and creative frontends",
-  },
-  {
-    icon: SiLeetcode,
-    color: "#FFA116",
-    bg: "#fff8ed",
-    title: "DSA Practice",
-    desc: "Solving data structures & algorithms problems daily to sharpen problem-solving",
-  },
-  {
     icon: LuBrainCircuit,
     color: "#059669",
     bg: "#ecfdf5",
@@ -66,13 +52,6 @@ const ACTIVITIES = [
     bg: "#eef0ff",
     title: "System Design",
     desc: "Studying scalable system design patterns, microservices, and architecture",
-  },
-  {
-    icon: LuBookOpen,
-    color: "#7c3aed",
-    bg: "#f3eeff",
-    title: "Writing",
-    desc: "Documenting learnings about web architecture and engineering practices",
   },
   {
     icon: LuFlame,
