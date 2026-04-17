@@ -2,12 +2,15 @@
 import { useState, useEffect, useRef } from "react";
 import {
     SiHtml5, SiCss, SiTailwindcss, SiJavascript, SiTypescript, SiReact, SiNextdotjs, SiFirebase, SiNodedotjs,
-    SiExpress, SiMongodb, SiPostgresql, SiPrisma, SiRedis, SiPostman,
+    SiExpress, SiMongodb, SiPostgresql, SiPrisma, SiPostman,
+    SiLinux, SiDocker,
 } from "react-icons/si";
 
 import {
     LuShieldCheck, LuDatabase, LuNetwork,
     LuLayoutTemplate, LuWrench, LuCode,
+    LuFramer,
+    LuTable2,
 
 } from "react-icons/lu";
 import type { IconType } from "react-icons";
@@ -36,7 +39,7 @@ const SKILLS: Skill[] = [
     { name: "SQL", icon: LuDatabase, color: "#336791", bg: "#edf3fb" },
     { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1", bg: "#eef1fd" },
     { name: "Prisma ORM", icon: SiPrisma, color: "#2D3748", bg: "#f0f2f5" },
-    { name: "Redis", icon: SiRedis, color: "#DC382D", bg: "#fef0ef" },
+    // { name: "Redis", icon: SiRedis, color: "#DC382D", bg: "#fef0ef" },
     // { name: "WebSocket", icon: LuPlug, color: "#7c3aed", bg: "#f3eeff" },
     // { name: "Socket.io", icon: SiSocketdotio, color: "#010101", bg: "#f5f5f5" },
     // { name: "WebRTC", icon: LuVideo, color: "#34a853", bg: "#e8f5e9" },
@@ -46,11 +49,12 @@ const SKILLS: Skill[] = [
     // { name: "JWT", icon: SiJsonwebtokens, color: "#d63aff", bg: "#faf0ff" },
     { name: "Postman", icon: SiPostman, color: "#FF6C37", bg: "#fff3ee" },
     { name: "VS Code", icon: LuCode, color: "#007ACC", bg: "#e8f4fd" },
-    // { name: "Linux", icon: SiLinux, color: "#FCC624", bg: "#fffce6" },
+    { name: "Docker", icon: SiDocker, color: "#2496ED", bg: "#e0f2fe" },
+    { name: "Linux", icon: SiLinux, color: "#FCC624", bg: "#fffce6" },
     // { name: "Figma", icon: SiFigma, color: "#F24E1E", bg: "#fff0ed" },
     // { name: "Pixso", icon: LuPenTool, color: "#8b5cf6", bg: "#f3eeff" },
-    // { name: "Draw.io", icon: LuFramer, color: "#f97316", bg: "#fff4ed" },
-    // { name: "BeeKeeper Studio", icon: LuTable2, color: "#f59e0b", bg: "#fffbe6" },
+    { name: "Draw.io", icon: LuFramer, color: "#f97316", bg: "#fff4ed" },
+    { name: "BeeKeeper Studio", icon: LuTable2, color: "#f59e0b", bg: "#fffbe6" },
 ];
 
 function useInView(threshold = 0.1) {

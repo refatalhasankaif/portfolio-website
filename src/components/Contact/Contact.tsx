@@ -174,7 +174,7 @@ const Contact = () => {
 
                 {/* Contact Info Section */}
                 {/* Contact Info Section */}
-                <div className="mt-10 pt-6 border-t border-gray-200 grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div className="mt-10 pt-6 border-t border-gray-200 grid grid-cols-1 sm:grid-cols-3 gap-2">
 
                     {/* Email */}
                     <a

@@ -189,7 +189,7 @@ const Hero = () => {
 
                         <div className="flex flex-col xs:flex-row gap-3 sm:gap-4 justify-center lg:justify-start pt-2">
                             <a
-                                href="https://www.linkedin.com/in/mdrefatalhasankaif/details/projects/"
+                                href="https://www.linkedin.com/in/mdrefatahk/details/projects/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 text-sm sm:text-base font-semibold bg-gray-900 text-white rounded-full transition-all duration-300 hover:bg-gray-800 hover:shadow-2xl hover:shadow-gray-900/25 hover:-translate-y-0.5 active:scale-95"
@@ -199,7 +199,7 @@ const Hero = () => {
                             </a>
 
                             <a
-                                href="/assets/cv.pdf"
+                                href="/cv.pdf"
                                 download="Refat_Al_Hasan_CV.pdf"
                                 className="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 text-sm sm:text-base font-semibold border-2 border-gray-200 text-gray-700 rounded-full transition-all duration-300 hover:border-gray-800 hover:text-gray-900 hover:shadow-lg hover:-translate-y-0.5 active:scale-95 bg-white/60 backdrop-blur-sm"
                             >

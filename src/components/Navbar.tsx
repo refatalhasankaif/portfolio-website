@@ -146,7 +146,7 @@ const Navbar = () => {
                             {/* Social icons — desktop only */}
                             <div className="hidden md:flex items-center gap-0.5">
                                 <a
-                                    href="https://www.linkedin.com/in/mdrefatalhasankaif/"
+                                    href="https://www.linkedin.com/in/mdrefatahk/"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="p-2.5 rounded-full text-gray-700 hover:text-gray-950 hover:bg-gray-100/70 transition-all duration-300 active:scale-90 hover:scale-110"
@@ -243,7 +243,7 @@ const Navbar = () => {
                         {/* Social icons — mobile only */}
                         <div className="flex items-center gap-1 px-4 py-3 border-t border-gray-200/80">
                             <a
-                                href="https://www.linkedin.com/in/mdrefatalhasankaif/"
+                                href="https://www.linkedin.com/in/mdrefatahk/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="p-2 rounded-full text-gray-700 hover:text-gray-950 hover:bg-gray-100/70 transition-all duration-300 active:scale-90"

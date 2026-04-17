@@ -1,57 +1,97 @@
 [
-    {
-        "id": 1,
-        "title": "BytesURL | Modern Full-Stack URL Shortener",
-        "description": "BytesURL is a full-stack URL shortener that lets users create branded short links, track real-time analytics, and manage everything through a clean dashboard.",
-        "imageUrl": "https://i.ibb.co.com/5hWcjDgj/Bone-White-Blue-Groovy-You-Matter-Desktop-Wallpaper.webp",
-        "liveLink": "https://bytesurl.vercel.app/",
-        "frontendRepo": "https://github.com/refatalhasankaif/bytesurl-frontend",
-        "backendRepo": "https://github.com/refatalhasankaif/bytesurl-backend",
-        "technologies": [
-            "Next.js",
-            "TypeScript",
-            "Responsive",
-            "TailwindCSS",
-            "Node.js",
-            "Express.js",
-            "REST API",
-            "Prisma ORM",
-            "PostgreSQL",
-            "Firebase Auth"
-        ]
-    },
-    {
-        "id": 2,
-        "title": "FoodHub | Discover & Order Delicious Meals",
-        "description": "FoodHub is a full-stack food ordering platform with role-based access for customers, sellers, and admins, supporting secure authentication and full CRUD operations.",
-           "imageUrl": "https://i.ibb.co.com/Mybk0xPn/Screenshot-From-2026-04-07-08-32-59.png",
-        "liveLink": "https://project-foodhub.vercel.app/",
-        "frontendRepo": "https://github.com/refatalhasankaif/foodhub-frontend",
-        "backendRepo": "https://github.com/refatalhasankaif/foodhub-backend",
-        "technologies": [
-            "Next.js",
-            "TypeScript",
-            "Responsive",
-            "TailwindCSS",
-            "Node.js",
-            "Express.js",
-            "REST API",
-            "Prisma ORM",
-            "PostgreSQL",
-            "Better Auth"
-        ]
-    },
-    {
-        "id": 4,
-        "title": "GTA VI | Unofficial",
-        "description": "A visually immersive website inspired by the GTA VI theme, built with modern web technologies. This project showcases a dynamic, interactive user interface using React.js, styled with TailwindCSS, enhanced with custom fonts, and animated using GSAP. Icons from React Icons and Remix Icons are integrated to add a polished, game-inspired aesthetic throughout the site.",
-        "imageUrl": "https://i.ibb.co.com/r2d0VqHV/Screenshot-From-2026-04-07-09-13-27.png",
-        "liveLink": "https://gta-vi-unofficial.vercel.app/",
-        "frontendRepo": "https://github.com/refatalhasankaif/gta-vi",
-        "technologies": [
-            "React.js",
-            "TailwindCSS",
-            "GSAP"
-        ]
+  {
+    "id": 1,
+    "number": "01",
+    "name": "BytesURL",
+    "tagline": "Full-Stack URL Shortener",
+    "description": "A scalable URL shortener platform that allows users to generate and manage short links with real-time analytics. Includes secure authentication, role-based access control, subscription management with payments, and AI-powered chat assistance.",
+    "image": "/1.png",
+    "highlights": [
+      "Scalable architecture capable of generating 281 trillion+ unique links via NanoID",
+      "Role-based access control for users and admins",
+      "Stripe subscription & payment integration",
+      "Real-time click analytics dashboard",
+      "AI chat integration for link management"
+    ],
+    "tech": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Shadcn UI",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "Prisma ORM",
+      "Firebase Auth",
+      "Stripe"
+    ],
+    "links": {
+      "live": "https://bytesurl.vercel.app",
+      "frontend": "https://github.com/refatalhasankaif/bytesurl-frontend",
+      "backend": "https://github.com/refatalhasankaif/bytesurl-backend"
     }
+  },
+  {
+    "id": 2,
+    "number": "02",
+    "name": "GreenStatesBD",
+    "tagline": "Full-Stack Real Estate Bidding Platform",
+    "description": "A scalable real estate platform that enables users to explore, list, and interact with properties through a bidding-based system. Includes role-based access control, content moderation, AI-powered features, and optimized media handling for a production-ready experience.",
+    "image": "/2.png",
+    "highlights": [
+      "Role-based access control (User, Admin, Moderator, Manager)",
+      "Property listing and bidding workflow",
+      "Gallery with Cloudinary-optimized image uploads",
+      "AI-powered blog generation for property listings",
+      "Integrated AI assistant and report/moderation system"
+    ],
+    "tech": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Shadcn UI",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "Prisma ORM",
+      "Firebase Auth",
+      "Cloudinary"
+    ],
+    "links": {
+      "live": "https://greenstatesbd.vercel.app",
+      "frontend": "https://github.com/refatalhasankaif/greenstatesbd-frontend",
+      "backend": "https://github.com/refatalhasankaif/greenstatesbd-backend"
+    }
+  },
+  {
+    "id": 3,
+    "number": "03",
+    "name": "FoodHub",
+    "tagline": "Full-Stack Food Ordering Platform",
+    "description": "A full-stack food ordering platform that enables users to browse meals, place orders, and manage food services. Includes role-based access control for customers, sellers, and admins, along with secure authentication and full CRUD functionality across the system.",
+    "image": "/3.png",
+    "highlights": [
+      "Role-based access control (Customer, Seller, Admin)",
+      "Full CRUD operations across all entities",
+      "Secure authentication with Better Auth",
+      "Order and menu management system",
+      "Scalable backend architecture"
+    ],
+    "tech": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Shadcn UI",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "Prisma ORM",
+      "Better Auth"
+    ],
+    "links": {
+      "live": "https://project-foodhub.vercel.app",
+      "frontend": "https://github.com/refatalhasankaif/foodhub-frontend",
+      "backend": "https://github.com/refatalhasankaif/foodhub-backend"
+    }
+  }
 ]
