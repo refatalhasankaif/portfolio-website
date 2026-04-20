@@ -3,13 +3,17 @@ import { useState, useEffect, useRef } from "react";
 import {
     SiHtml5, SiCss, SiTailwindcss, SiJavascript, SiTypescript, SiReact, SiNextdotjs, SiFirebase, SiNodedotjs,
     SiExpress, SiMongodb, SiPostgresql, SiPrisma, SiPostman,
-    SiLinux,
+    SiFigma,
+    SiJsonwebtokens,
 } from "react-icons/si";
 
 import {
     LuShieldCheck, LuDatabase, LuNetwork,
     LuLayoutTemplate, LuWrench, 
     LuTable2,
+    LuCode,
+    LuFramer,
+    LuPenTool,
 
 } from "react-icons/lu";
 import type { IconType } from "react-icons";
@@ -45,14 +49,14 @@ const SKILLS: Skill[] = [
     { name: "Firebase", icon: SiFirebase, color: "#FFCA28", bg: "#fffbe6" },
     { name: "Better Auth", icon: LuShieldCheck, color: "#0ea5e9", bg: "#e0f5ff" },
     { name: "REST API", icon: LuNetwork, color: "#059669", bg: "#ecfdf5" },
-    // { name: "JWT", icon: SiJsonwebtokens, color: "#d63aff", bg: "#faf0ff" },
+    { name: "JWT", icon: SiJsonwebtokens, color: "#d63aff", bg: "#faf0ff" },
     { name: "Postman", icon: SiPostman, color: "#FF6C37", bg: "#fff3ee" },
-    // { name: "VS Code", icon: LuCode, color: "#007ACC", bg: "#e8f4fd" },
+    { name: "VS Code", icon: LuCode, color: "#007ACC", bg: "#e8f4fd" },
     // { name: "Docker", icon: SiDocker, color: "#2496ED", bg: "#e0f2fe" },
-    { name: "Linux", icon: SiLinux, color: "#FCC624", bg: "#fffce6" },
-    // { name: "Figma", icon: SiFigma, color: "#F24E1E", bg: "#fff0ed" },
-    // { name: "Pixso", icon: LuPenTool, color: "#8b5cf6", bg: "#f3eeff" },
-    // { name: "Draw.io", icon: LuFramer, color: "#f97316", bg: "#fff4ed" },
+    // { name: "Linux", icon: SiLinux, color: "#FCC624", bg: "#fffce6" },
+    { name: "Figma", icon: SiFigma, color: "#F24E1E", bg: "#fff0ed" },
+    { name: "Pixso", icon: LuPenTool, color: "#8b5cf6", bg: "#f3eeff" },
+    { name: "Draw.io", icon: LuFramer, color: "#f97316", bg: "#fff4ed" },
     { name: "BeeKeeper Studio", icon: LuTable2, color: "#f59e0b", bg: "#fffbe6" },
 ];
 
