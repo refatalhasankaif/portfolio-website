@@ -168,14 +168,9 @@ const Hero = () => {
             />
             <div className="relative z-10 max-w-7xl w-full mx-auto px-5 sm:px-10 lg:px-16 py-24 md:py-28 lg:py-20">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                    <div className="space-y-4 md:space-y-5 text-center lg:text-left order-2 lg:order-1">
 
-                    <div className="space-y-6 md:space-y-8 text-center lg:text-left order-2 lg:order-1">
-                        <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-gray-900/5 border border-gray-200 rounded-full text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                            <span className="w-1.5 h-1.5 rounded-full bg-gray-400" />
-                            Portfolio · 2026
-                        </div>
-
-                        <h1 className="text-5xl sm:text-6xl xl:text-7xl font-extrabold tracking-tight text-gray-900 leading-[1.05]">
+                        <h1 className="text-5xl sm:text-5xl xl:text-6xl font-extrabold tracking-tight text-gray-900 leading-[1.05]">
                             Refat
                             <br />
                             <span className="text-transparent bg-clip-text bg-linear-to-r from-gray-700 via-gray-500 to-gray-400">
@@ -183,7 +178,7 @@ const Hero = () => {
                             </span>
                         </h1>
 
-                        <p className="text-base sm:text-lg lg:text-xl text-gray-500 font-normal max-w-lg mx-auto lg:mx-0 leading-relaxed">
+                        <p className="text-base text-gray-500 font-normal max-w-lg mx-auto lg:mx-0 leading-relaxed">
                             I specialize in crafting efficient web solutions that transform ideas into high-performance websites and applications, ensuring seamless functionality, optimized speed, and intuitive user experiences.
                         </p>
 
@@ -192,16 +187,16 @@ const Hero = () => {
                                 href="https://www.linkedin.com/in/refatkaif/details/projects/"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 text-sm sm:text-base font-semibold bg-gray-900 text-white rounded-full transition-all duration-300 hover:bg-gray-800 hover:shadow-2xl hover:shadow-gray-900/25 hover:-translate-y-0.5 active:scale-95"
+                                className="inline-flex items-center justify-center gap-2.5 px-6 py-3 text-sm sm:text-base font-semibold bg-gray-900 text-white rounded-full transition-all duration-300 hover:bg-gray-800 hover:shadow-2xl hover:shadow-gray-900/25 hover:-translate-y-0.5 active:scale-95"
                             >
                                 View Projects
                                 <LuExternalLink size={16} />
                             </a>
 
                             <a
-                                href="/Refat_Al_Hasan_Resume.pdf"
-                                download="Refat_Al_Hasan_Resume.pdf"
-                                className="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 text-sm sm:text-base font-semibold border-2 border-gray-200 text-gray-700 rounded-full transition-all duration-300 hover:border-gray-800 hover:text-gray-900 hover:shadow-lg hover:-translate-y-0.5 active:scale-95 bg-white/60 backdrop-blur-sm"
+                                href="/Resume_Refat_Al_Hasan.pdf"
+                                download="Resume_Refat_Al_Hasan.pdf"
+                                className="inline-flex items-center justify-center gap-2.5 px-6 py-3 text-sm sm:text-base font-semibold border-2 border-gray-200 text-gray-700 rounded-full transition-all duration-300 hover:border-gray-800 hover:text-gray-900 hover:shadow-lg hover:-translate-y-0.5 active:scale-95 bg-white/60 backdrop-blur-sm"
                             >
                                 Download Resume
                                 <LuDownload size={16} />
