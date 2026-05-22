@@ -20,7 +20,6 @@ import {
     SiNpm,
     SiPostgresql,
     SiPostman,
-    SiPrettier,
     SiPrisma,
     SiReact,
     SiStripe,
@@ -28,7 +27,6 @@ import {
     SiTypescript,
     SiVercel,
     SiZod,
-    SiArchlinux,
 } from "react-icons/si";
 
 import {
