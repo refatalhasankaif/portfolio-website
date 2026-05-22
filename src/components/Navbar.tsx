@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
-import { LuGithub, LuLinkedin } from "react-icons/lu";
-import { FaXTwitter } from "react-icons/fa6";
+import { LuGithub } from "react-icons/lu";
+
 
 const NAV_ITEMS = [
     { label: "Home", id: "home" },
@@ -146,23 +146,6 @@ const Navbar = () => {
                             {/* Social icons — desktop only */}
                             <div className="hidden md:flex items-center gap-0.5">
                                 <a
-                                    href="https://www.linkedin.com/in/refatkaif/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="p-2.5 rounded-full text-gray-700 hover:text-gray-950 hover:bg-gray-100/70 transition-all duration-300 active:scale-90 hover:scale-110"
-                                >
-                                    <LuLinkedin size={20} strokeWidth={1.8} />
-                                </a>
-                                <a
-                                    href="https://x.com/mdrefatalhasan"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="p-2.5 rounded-full text-gray-700 hover:text-gray-950 hover:bg-gray-100/70 transition-all duration-300 active:scale-90 hover:scale-110"
-                                >
-                                    <FaXTwitter size={20} strokeWidth={1.8} />
-                                </a>
-
-                                <a
                                     href="https://github.com/refatalhasankaif"
                                     target="_blank"
                                     rel="noopener noreferrer"
@@ -242,22 +225,6 @@ const Navbar = () => {
 
                         {/* Social icons — mobile only */}
                         <div className="flex items-center gap-1 px-4 py-3 border-t border-gray-200/80">
-                            <a
-                                href="https://www.linkedin.com/in/refatkaif/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="p-2 rounded-full text-gray-700 hover:text-gray-950 hover:bg-gray-100/70 transition-all duration-300 active:scale-90"
-                            >
-                                <LuLinkedin size={20} strokeWidth={1.8} />
-                            </a>
-                            <a
-                                href="https://x.com/mdrefatalhasan"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="p-2.5 rounded-full text-gray-700 hover:text-gray-950 hover:bg-gray-100/70 transition-all duration-300 active:scale-90 hover:scale-110"
-                            >
-                                <FaXTwitter size={20} strokeWidth={1.8} />
-                            </a>
                             <a
                                 href="https://github.com/refatalhasankaif"
                                 target="_blank"

@@ -124,7 +124,7 @@ function ProfileCard() {
                         </div>
                     </div>
                     <h3 className="font-bold text-gray-900 text-lg tracking-tight">Refat al hasan</h3>
-                    <p className="text-sm text-gray-500 mt-0.5">Full-stack Developer</p>
+                    <p className="text-sm text-gray-500 mt-0.5">Full-Stack Developer</p>
                 </div>
 
                 {/* Stats */}

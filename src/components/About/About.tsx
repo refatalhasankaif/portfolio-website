@@ -74,7 +74,7 @@ const About = () => {
                 </span>
               </h2>
               <p className="mt-2 text-sm font-semibold text-gray-500 tracking-wide">
-                Full-stack Developer
+                Full-Stack Developer
               </p>
               <div className="flex flex-wrap items-center gap-3 mt-3">
                 <span className="flex items-center gap-1.5 text-xs text-gray-500 font-medium">
@@ -93,7 +93,7 @@ const About = () => {
             </div>
 
             <p className="text-sm sm:text-base text-gray-600 leading-relaxed md:max-w-[95%] max-w-full sm:max-w-[90%]">
-              I am a motivated Full-stack Developer from Bangladesh, passionate about building
+              I am a motivated Full-Stack Developer from Bangladesh, passionate about building
               real-world solutions through hands-on projects. I write clean, maintainable code and
               focus on building efficient, scalable web applications with strong attention to
               performance, user experience, and modern best practices. I am adaptable, quick to learn,

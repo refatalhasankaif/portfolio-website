@@ -95,7 +95,7 @@ const SKILLS: Skill[] = [
     // ── Tooling ───────────────────────────────────────────────────────────────
     { name: "npm",          icon: SiNpm,           color: "#CB3837", bg: "#fef0ef" },
     { name: "ESLint",       icon: SiEslint,        color: "#4B32C3", bg: "#edeafc" },
-    { name: "Prettier",     icon: SiPrettier,      color: "#F7B93E", bg: "#fffbe0" },
+    // { name: "Prettier",     icon: SiPrettier,      color: "#F7B93E", bg: "#fffbe0" },
     { name: "Postman",      icon: SiPostman,       color: "#FF6C37", bg: "#fff3ee" },
     { name: "VS Code",      icon: LuCode,          color: "#007ACC", bg: "#e8f4fd" },
 
@@ -143,7 +143,7 @@ const SKILLS: Skill[] = [
     // { name: "Linux",         icon: SiLinux,           color: "#FCC624", bg: "#fffce6" },
     // { name: "Ubuntu",        icon: SiUbuntu,          color: "#E95420", bg: "#fff1ee" },
     // { name: "Ubuntu Server", icon: SiUbuntu,          color: "#772953", bg: "#f5eef2" },
-    { name: "Arch Linux",    icon: SiArchlinux,       color: "#1793D1", bg: "#e0f4fd" },
+    // { name: "Arch Linux",    icon: SiArchlinux,       color: "#1793D1", bg: "#e0f4fd" },
     // { name: "Bash",          icon: LuTerminal,        color: "#4EAA25", bg: "#edf9e8" },
 
     // ── Databases (Extended) ──────────────────────────────────────────────────
