@@ -40,7 +40,7 @@ const Contact = () => {
 
     return (
         <section
-            id="contact"
+            id="contact-section"
             className="relative w-full py-10 flex items-center bg-linear-to-b from-gray-50 to-white overflow-hidden"
         >
             {/* Background */}

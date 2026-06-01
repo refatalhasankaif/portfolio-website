@@ -155,7 +155,7 @@ export default function Projects() {
 
   if (loading) {
     return (
-      <section className="py-24 text-center">
+      <section id="projects-loading" className="py-24 text-center">
         <p className="text-gray-500">Loading projects...</p>
       </section>
     );
@@ -163,7 +163,7 @@ export default function Projects() {
 
   if (error) {
     return (
-      <section className="py-24 text-center">
+      <section id="projects-error" className="py-24 text-center">
         <p className="text-red-500">{error}</p>
       </section>
     );
@@ -171,7 +171,7 @@ export default function Projects() {
 
   return (
     <section
-      id="projects"
+      id="projects-section"
       className="relative w-full py-16 sm:py-20 lg:py-24 bg-linear-to-br from-gray-50 via-white to-slate-100 overflow-hidden"
     >
       {/* Background Pattern */}

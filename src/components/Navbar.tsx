@@ -7,6 +7,7 @@ const NAV_ITEMS = [
     { label: "Skills", id: "skills" },
     { label: "Projects", id: "projects" },
     { label: "Current activities", id: "current-activities" },
+    { label: "Services", id: "services" },
     { label: "About", id: "about" },
     { label: "Contact", id: "contact" },
 ] as const;
@@ -105,12 +106,13 @@ const Navbar = () => {
                         {/* Logo */}
                         <a
                             href="#home"
+                            aria-label="Go to home section"
                             onClick={() => handleNavClick("home")}
                             className="flex items-center transition-transform duration-200 hover:scale-110 active:scale-95"
                         >
                             <img
                                 src="/icon.png"
-                                alt="Logo"
+                                alt="Refat al Hasan logo"
                                 className="h-7 w-7 sm:h-8 sm:w-8 rounded-md object-cover"
                             />
                         </a>
@@ -149,6 +151,7 @@ const Navbar = () => {
                                     href="https://github.com/refatalhasankaif"
                                     target="_blank"
                                     rel="noopener noreferrer"
+                                    aria-label="View GitHub profile"
                                     className="p-2.5 rounded-full text-gray-700 hover:text-gray-950 hover:bg-gray-100/70 transition-all duration-300 active:scale-90 hover:scale-110"
                                 >
                                     <LuGithub size={20} strokeWidth={1.8} />
@@ -229,6 +232,7 @@ const Navbar = () => {
                                 href="https://github.com/refatalhasankaif"
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                aria-label="View GitHub profile"
                                 className="p-2 rounded-full text-gray-700 hover:text-gray-950 hover:bg-gray-100/70 transition-all duration-300 active:scale-90"
                             >
                                 <LuGithub size={20} strokeWidth={1.8} />

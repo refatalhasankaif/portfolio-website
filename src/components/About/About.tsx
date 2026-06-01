@@ -37,7 +37,7 @@ const About = () => {
 
   return (
     <section
-      id="about"
+      id="about-section"
       className="relative w-full py-10 flex items-center bg-linear-to-b from-white to-gray-50 overflow-hidden"
     >
       {/* Background */}
