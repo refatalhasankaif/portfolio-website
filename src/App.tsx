@@ -15,7 +15,7 @@ function App() {
         <>
             <SEO
                 title="Md. Refat Al Hasan Kaif | Full-Stack Developer Bangladesh"
-                description="Full-Stack Developer from Rajshahi, Bangladesh offering landing page development, Figma to React/Next.js conversion, AI website fixes, MERN/PERN web applications, responsive website development, and website redesign services for international freelance clients."
+                description="Full-Stack Developer from Rajshahi, Bangladesh offering landing page development, Figma to React/Next.js conversion, website fixes, MERN/PERN web applications, responsive website development, and website redesign services for international freelance clients."
                 canonical="https://refatalhasan.com"
             />
             <Navbar />

@@ -25,7 +25,7 @@ function useInView(threshold = 0.05) {
 
 const PRINCIPLES = [
   { icon: LuLayers,       label: "Modular Architecture",           desc: "Structuring applications with reusable, decoupled modules and clean separation of concerns across the codebase"         },
-  { icon: LuBrainCircuit, label: "AI for Rapid Development",       desc: "Leveraging AI-powered tools like GitHub Copilot and Claude to accelerate development cycles and reduce repetitive work" },
+  { icon: LuBrainCircuit, label: "Efficient Development",         desc: "Using productivity tools and smart workflows to accelerate development cycles and reduce repetitive work" },
   { icon: LuCode,         label: "Clean Code Principles",          desc: "Writing readable, self-documenting code with consistent naming, minimal complexity, and thorough code reviews"          },
   { icon: LuShield,       label: "Security-First Mindset",         desc: "Implementing authentication, input validation, and secure API design patterns from the very start of every project"    },
   { icon: LuZap,          label: "Performance Optimisation",       desc: "Focusing on fast load times, efficient rendering, lazy loading, and optimised database queries for better UX"          },

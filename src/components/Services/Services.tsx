@@ -22,7 +22,7 @@ const services = [
     },
     {
         icon: LuWrench,
-        title: "AI Website Fix",
+        title: "Website Fix",
         desc: "Fix broken pages, resolve layout issues, and restore polished performance so your site works reliably for every visitor.",
         badge: "Quick Turnaround",
         tag: "Maintenance",
@@ -154,7 +154,7 @@ const Services = () => {
                 <div className="mt-16 grid grid-cols-2 sm:grid-cols-4 gap-4">
                     {[
                         { value: "100%", label: "Clean Code" },
-                        { value: "3–5d", label: "Avg. Delivery" },
+                        { value: "3-5d", label: "Avg. Delivery" },
                         { value: "Full", label: "Stack Coverage" },
                         { value: "∞", label: "Revisions Support" },
                     ].map(({ value, label }) => (
@@ -172,7 +172,7 @@ const Services = () => {
                 <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 p-6 sm:p-8 rounded-2xl bg-gray-900 text-white">
                     <div>
                         <h3 className="text-lg font-bold mb-1">Have a custom project in mind?</h3>
-                        <p className="text-sm text-gray-400">Let's build something great together — reach out via the contact section.</p>
+                        <p className="text-sm text-gray-400">Let's build something great together, reach out via the contact section.</p>
                     </div>
                     <a
                         href="#contact"

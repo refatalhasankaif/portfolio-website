@@ -27,13 +27,6 @@ function useInView(threshold = 0.05) {
 
 const ACTIVITIES = [
   {
-    icon: LuCode,
-    color: "#6366f1",
-    bg: "#eef0ff",
-    title: "Web Development",
-    desc: "Completed core course on time, now doing reward courses from Next Level Web Development (Batch 6)",
-  },
-  {
     icon: SiDocker,
     color: "#2496ED",
     bg: "#e8f4fd",
@@ -58,15 +51,8 @@ const ACTIVITIES = [
     icon: LuBrainCircuit,
     color: "#059669",
     bg: "#ecfdf5",
-    title: "AI Experiments",
-    desc: "Trying simple AI APIs and use cases",
-  },
-  {
-    icon: LuFlame,
-    color: "#ef4444",
-    bg: "#fef2f2",
-    title: "Career",
-    desc: "Actively looking for junior/full-stack developer opportunities",
+    title: "Tool Experiments",
+    desc: "Trying new productivity tools and development workflows",
   },
 ];
 

@@ -6,7 +6,7 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { LuMail, LuSend, LuCheck, LuCircleAlert } from "react-icons/lu";
-import { FaWhatsapp, FaTelegram } from "react-icons/fa6";
+import { FaWhatsapp, FaTelegram, FaDiscord } from "react-icons/fa6";
 import { SiGmail } from "react-icons/si";
 import { EMAILJS_PUBLIC_KEY, EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID } from "../../variables";
 
@@ -57,7 +57,7 @@ const Contact = () => {
                 />
             </div>
 
-            <div className="relative w-full max-w-2xl mx-auto px-5 sm:px-10 py-10">
+            <div className="relative w-11/12 max-w-5xl mx-auto px-5 sm:px-10 py-10">
 
                 {/* Header */}
                 <div className="text-center mb-10">
@@ -80,9 +80,9 @@ const Contact = () => {
                 </div>
 
                 {/* Form */}
-                <form ref={formRef} onSubmit={handleSubmit} className="space-y-4">
+                <form ref={formRef} onSubmit={handleSubmit} className="space-y-4 w-full mx-auto">
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
                         <div className="flex flex-col gap-1.5">
                             <label className="text-xs font-semibold text-gray-500 uppercase tracking-wider">
                                 Name
@@ -173,13 +173,12 @@ const Contact = () => {
                 </form>
 
                 {/* Contact Info Section */}
-                {/* Contact Info Section */}
-                <div className="mt-10 pt-6 border-t border-gray-200 grid grid-cols-1 sm:grid-cols-3 gap-2">
+                <div className="mt-10 pt-6 border-t border-gray-200 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
                     {/* Email */}
                     <a
                         href="mailto:mdrefatahk@gmail.com"
-                        className="flex flex-col items-center text-center p-4 rounded-xl border border-gray-200 bg-white hover:shadow-md transition-all"
+                        className="flex flex-col items-center text-center p-4 rounded-xl border border-gray-200 bg-white hover:shadow-md transition-all duration-200"
                     >
                         <SiGmail
                             size={20}
@@ -199,7 +198,7 @@ const Contact = () => {
                         href="https://wa.me/8801758055919"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex flex-col items-center text-center p-4 rounded-xl border border-gray-200 bg-white hover:shadow-md transition-all"
+                        className="flex flex-col items-center text-center p-4 rounded-xl border border-gray-200 bg-white hover:shadow-md transition-all duration-200"
                     >
                         <FaWhatsapp size={20} className="mb-2 text-green-500" />
                         <p className="text-xs text-gray-500 uppercase">WhatsApp</p>
@@ -213,12 +212,26 @@ const Contact = () => {
                         href="https://t.me/refatalhasan"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex flex-col items-center text-center p-4 rounded-xl border border-gray-200 bg-white hover:shadow-md transition-all"
+                        className="flex flex-col items-center text-center p-4 rounded-xl border border-gray-200 bg-white hover:shadow-md transition-all duration-200"
                     >
                         <FaTelegram size={20} className="mb-2 text-sky-500" />
-                        <p className="text-xs text-gray-500 uppercase">Telegram</p>
-                        <p className="text-sm font-medium text-gray-900">
+                        <p className="text-xs text-gray-500 uppercase tracking-wider">Telegram</p>
+                        <p className="text-sm font-semibold text-gray-900 mt-1">
                             @refatalhasan
+                        </p>
+                    </a>
+
+                    {/* Discord */}
+                    <a
+                        href="https://discord.com/users/1472431179637723280"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex flex-col items-center text-center p-4 rounded-xl border border-gray-200 bg-white hover:shadow-md transition-all duration-200"
+                    >
+                        <FaDiscord size={20} className="mb-2" style={{ color: "#5865F2" }} />
+                        <p className="text-xs text-gray-500 uppercase tracking-wider">Discord</p>
+                        <p className="text-sm font-semibold text-gray-900 mt-1">
+                            refatalhasankaif
                         </p>
                     </a>
 
