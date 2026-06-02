@@ -1,9 +1,8 @@
 // src/components/CurrentActivity.tsx
 import { useEffect, useRef, useState } from "react";
 import {
-  LuBrainCircuit, LuGitBranch, LuZap,
-  LuFlame, LuServer,
-  LuCode,
+  LuBrainCircuit, LuGitBranch, LuZap, LuServer,
+
 } from "react-icons/lu";
 import { SiDocker, } from "react-icons/si";
 
